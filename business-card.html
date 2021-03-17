@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card Example</title>
+    <style>
+        body{
+          background-color: #EEE;
+        }
+        h1,h2,p,ul{
+          padding: 0;
+          margin: 0;
+          list-style: none;
+        }
+        .business-card{
+          background-color: #111;
+          width: 460px;
+          height: 250px;
+          font-family: Arial;
+          box-shadow: 2px 0 0 6px #CCC;
+        }
+        .business-card .name{
+          
+         display: inline-block;
+         margin-right: 5px;
+         margin-left: 35px;
+         text-align: right;
+         vertical-align:18px;
+         }
+        .business-card .info{
+          display: inline-block;
+          margin-top: 72px;
+          padding-left: 10px;
+          border-left: 2px solid white; 
+
+        }
+        .business-card .name h1{
+          font-weight: 400;
+          color: white;
+        }
+        .business-card .name h2{
+          color: #997300;        
+        }
+        .business-card .name small{
+            color: gray;
+        }
+        .business-card .info p{
+            color: white;
+            margin-bottom: 7px;
+        }
+        .business-card .info li{
+          
+            font-size: smaller;
+            color: gray;
+        }
+        .business-card .info li:first-of-type::before{
+          content: url(https://icons.iconarchive.com/icons/martz90/circle/16/phone-icon.png);
+          margin-right:10px;
+          font-size: 20px;
+        }
+        .business-card .info li:nth-of-type(2)::before{
+          content: url(https://icons.iconarchive.com/icons/graphicloads/100-flat-2/16/email-icon.png);
+          margin-right:10px;
+          font-size: 20px;
+        }
+        .business-card .info li:last-of-type::before{
+          content: url(https://icons.iconarchive.com/icons/aha-soft/free-global-security/16/Global-Network-icon.png);
+          margin-right:10px;
+          font-size: 20px;
+        }
+    
+    
+      </style>
+</head>
+<body>
+    <div class="business-card">
+        <div class="name">
+            <h1>Firstname</h1>
+            <h2>LASTNAME</h2>
+            <small>web designer &#47; developer</small>
+          </div>
+          <div class="info">
+            <p>12345 Some Street, City<br>State, Province, Country</p>
+             <ul>
+               <li>+00 22 333444</li>
+               <li>email@somemail.example</li>
+               <li>www.exampledomain.example</li>
+             </ul>
+          </div>
+    </div>
+</body>
+</html>
